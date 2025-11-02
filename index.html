@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Galgana | Web Developer</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>James Galgana</span></h1>
+      <h3>WEB DEVELOPER</h3>
+      <p>I design and develop visually engaging websites with clean code and creative style.</p>
+      <div class="btn-sci">
+        <a href="#" class="btn">Download CV</a>
+        <div class="sci">
+          <a href="#"><i class='bx bxl-facebook-circle'></i></a> 
+          <a href="#"><i class='bx bxl-github'></i></a> 
+          <a href="#"><i class='bx bxl-instagram' ></i></a> 
+          <a href="#"><i class='bx bxl-linkedin-square' ></i></a> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="circle-bg"></div>
+      <!-- Replaced local 'withbg.png' with a placeholder -->
+      <img src="withbg.png" 
+           onerror="this.src='https://placehold.co/400x450?text=Image'" 
+           alt="James Galgana">
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" class="section-dark reveal">
+    
+    <!-- 'About Me' content -->
+    <div class="about-section">
+      <h2 class="section-title">ABOUT <span>ME</span></h2>
+      <p>I’m James Miguel Galgana, a passionate web developer who enjoys bringing creative ideas to life through clean and functional design.
+I specialize in building responsive, user-friendly websites with a focus on both aesthetics and performance.
+I’m constantly learning new technologies to improve my skills and stay updated with modern trends in web development.
+My goal is to create digital experiences that not only look great but also make a meaningful impact.
+Outside of coding, I enjoy exploring art and design, which inspires my creativity in every project I work on.</p>
+      
+    <div class="skills-section">
+      <h2 class="section-title">SKI<span>LLS</span></h2>
+      <div class="skills-container">
+        <img src="html.png"  
+             alt="html" class="skill-icon">
+        <img src="css3.png"  
+             alt="css logo" class="skill-icon">
+        <img src="jaba.png"  
+             alt="javascript" class="skill-icon">
+        <img src="pylogo.png"  
+             alt="python logo" class="skill-icon">
+        <img src="uiux.png"  
+             alt="ui ux logo" class="skill-icon">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects -->
+ 
+<section id="projects" class="section-light reveal">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+    <div class="card">
+      <video src="proj1.mp4" autoplay loop muted playsinline class="video-mobile"></video>
+    </div>
+    <div class="card">
+      <video src="proj2.mp4" autoplay loop muted playsinline class="video-pc"></video>
+    </div>
+  </div>
+</section>
+
+
+  
+  <!-- Contact -->
+
+  <section id="contact" class="section-dark reveal">
+    <h2>Contact Me</h2>
+    <p>Let's work together! You can reach me at:</p>
+    <p><strong>jamesgalgana@email.com</strong></p>
+  </section>
+
+  <footer>
+    <p>James Galgana's Portfolio</p>
+  </footer>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+  
+  <script>
+  window.addEventListener('scroll', reveal);
+
+  function reveal() {
+    const reveals = document.querySelectorAll('.reveal');
+
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveals[i].getBoundingClientRect().top;
+      const revealPoint = 100;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add('active');
+      } else {
+       
+      }
+    }
+  }
+  
+  reveal(); 
+</script>
+<script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
