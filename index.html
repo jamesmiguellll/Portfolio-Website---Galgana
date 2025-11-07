@@ -1,158 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>James Galgana | Web Developer</title>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Galgana | Web Developer</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm <span>James Galgana</span></h1>
-      <h3>WEB DEVELOPER</h3>
-      <p>I design and develop visually engaging websites with clean code and creative style.</p>
-      <div class="btn-sci">
-        <a href="#" class="btn">Download CV</a>
-        <div class="sci">
-          <a href="#"><i class='bx bxl-facebook-circle'></i></a> 
-          <a href="#"><i class='bx bxl-github'></i></a> 
-          <a href="#"><i class='bx bxl-instagram' ></i></a> 
-          <a href="#"><i class='bx bxl-linkedin-square' ></i></a> 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="parallax-wave parallax-wave-third"></div>
+        <div class="parallax-wave parallax-wave-back"></div>
+        <div class="parallax-wave parallax-wave-front"></div>
+        <div class="hero-content">
+            <h1 id="typing-h1">Hi, I'm <span>James Galgana</span><span class="cursor">|</span></h1>
+            <h3>WEB DEVELOPER</h3>
+            <p>I design and develop visually engaging websites with clean code and creative style.</p>
+            <div class="btn-sci">
+                <a href="samplecv.pdf" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://www.facebook.com/jamesg.515/"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://github.com/jamesmiguellll"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/jeymsmigweeel/?hl=en"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/galgana-james-miguel-t-a1a93435a/"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <div class="hero-image">
+            <div class="circle-bg"></div>
+            <img src="withbg.png" onerror="this.src='https://placehold.co/400x450?text=Image'" alt="James Galgana">
+        </div>
+    </section>
 
-    <div class="hero-image">
-      <div class="circle-bg"></div>
-      <!-- Replaced local 'withbg.png' with a placeholder -->
-      <img src="withbg.png" 
-           onerror="this.src='https://placehold.co/400x450?text=Image'" 
-           alt="James Galgana">
-    </div>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about" class="section-dark reveal">
-    
-    <!-- 'About Me' content -->
-    <div class="about-section">
-      <h2 class="section-title">ABOUT <span>ME</span></h2>
-      <p>I’m James Miguel Galgana, a passionate web developer who enjoys bringing creative ideas to life through clean and functional design.
-I specialize in building responsive, user-friendly websites with a focus on both aesthetics and performance.
-I’m constantly learning new technologies to improve my skills and stay updated with modern trends in web development.
-My goal is to create digital experiences that not only look great but also make a meaningful impact.
-Outside of coding, I enjoy exploring art and design, which inspires my creativity in every project I work on.</p>
-      
-    <div class="skills-section">
-      <h2 class="section-title">SKI<span>LLS</span></h2>
-      <div class="skills-container">
-        <img src="html.png"  
-             alt="html" class="skill-icon">
-        <img src="css3.png"  
-             alt="css logo" class="skill-icon">
-        <img src="jaba.png"  
-             alt="javascript" class="skill-icon">
-        <img src="pylogo.png"  
-             alt="python logo" class="skill-icon">
-        <img src="uiux.png"  
-             alt="ui ux logo" class="skill-icon">
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="section-dark">
+        <div class="about-section">
+            <!-- About Me Content -->
+            <div class="about-content">
+                <h2 class="section-title">ABOUT <span>ME</span></h2>
+                <p>I’m James Miguel Galgana, a passionate web developer who enjoys bringing creative ideas to life through clean and functional design. I specialize in building responsive, user-friendly websites with a focus on both aesthetics and performance. I’m constantly learning new technologies to improve my skills and stay updated with modern trends in web development. My goal is to create digital experiences that not only look great but also make a meaningful impact. Outside of coding, I enjoy exploring art and design, which inspires my creativity in every project I work on.</p>
+            </div>
+            
+            <!-- Skills Content -->
+            <div class="skills-content">
+                <h2 class="section-title">SKI<span>LLS</span></h2>
+                <ul class="skills-list">
+                    <li><strong>Programming/Markup Languages:</strong> HTML, CSS, JavaScript, Python</li>
+                    <li><strong>Frameworks & Libraries:</strong> React, Node.js, Express.js</li>
+                    <li><strong>Design & UI/UX:</strong> UI/UX Design, Responsive Design, Figma, Adobe XD</li>
+                    <li><strong>Soft Skills:</strong> Problem-Solving, Team Collaboration</li>
+                </ul>
+            </div>
 
+            <!-- Tools Section -->
+            <div class="tools-section">
+                <h2 class="section-title">TOO<span>LS</span></h2>
+                <div class="tools-container">
+                    <img src="html.png" alt="html" class="tool-icon">
+                    <img src="css3.png" alt="css logo" class="tool-icon">
+                    <img src="jaba.png" alt="javascript" class="tool-icon">
+                    <img src="pylogo.png" alt="python logo" class="tool-icon">
+                    <img src="Figma-logo.svg.png" alt="figma logo" class="tool-icon">
+                    <img src="github.svg" alt="github logo" class="tool-icon">
+                    <img src="visualstd.png" alt="vs code logo" class="tool-icon">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects -->
- 
-<section id="projects" class="section-light reveal">
-  <h2>My Projects</h2>
-  <div class="project-grid">
-    <div class="card">
-      <video src="proj1.mp4" autoplay loop muted playsinline class="video-mobile"></video>
-    </div>
-    <div class="card">
-      <video src="proj2.mp4" autoplay loop muted playsinline class="video-pc"></video>
-    </div>
-  </div>
-</section>
+    <!-- Projects -->
+    <section id="projects" class="section-light reveal">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="project-grid">
+            <div class="card">
+                <video src="proj1.mp4" autoplay loop muted playsinline class="video-mobile"></video>
+            </div>
+            <div class="card">
+                <video src="proj2.mp4" autoplay loop muted playsinline class="video-pc"></video>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="section-light">
+        <h2>Contact Me</h2>
+        <p>Let's work together! You can reach me at:</p>
+        <p><strong>jamesgalgana@email.com</strong></p>
+    </section>
 
-  
-  <!-- Contact -->
+    <footer>
+        <p>James Galgana's Portfolio</p>
+    </footer>
 
-  <section id="contact" class="section-dark reveal">
-    <h2>Contact Me</h2>
-    <p>Let's work together! You can reach me at:</p>
-    <p><strong>jamesgalgana@email.com</strong></p>
-  </section>
+    <!-- Scripts -->
+    <script>
+        window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
+        });
+    </script>
 
-  <footer>
-    <p>James Galgana's Portfolio</p>
-  </footer>
-
-  <script>
-    window.addEventListener("load", () => {
-      document.body.classList.add("loaded");
-    });
-  </script>
-  
-  <script>
-  window.addEventListener('scroll', reveal);
-
-  function reveal() {
-    const reveals = document.querySelectorAll('.reveal');
-
-    for (let i = 0; i < reveals.length; i++) {
-      const windowHeight = window.innerHeight;
-      const revealTop = reveals[i].getBoundingClientRect().top;
-      const revealPoint = 100;
-
-      if (revealTop < windowHeight - revealPoint) {
-        reveals[i].classList.add('active');
-      } else {
-       
-      }
-    }
-  }
-  
-  reveal(); 
-</script>
-<script>
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-links a");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 150;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-          current = section.getAttribute("id");
+    <script>
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const revealTop = reveals[i].getBoundingClientRect().top;
+                const revealPoint = 100;
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
         }
-      });
+        reveal();
+    </script>
 
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-links a");
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute("id");
+                }
+            });
+            navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === "#" + current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const heroContent = document.querySelector('.hero-content');
+            const heroImage = document.querySelector('.hero-image');
+            const parallaxThird = document.querySelector('.parallax-wave-third');
+            const parallaxBack = document.querySelector('.parallax-wave-back');
+            const parallaxFront = document.querySelector('.parallax-wave-front');
+
+            // Parallax for hero content and image 
+            if (heroContent) {
+                heroContent.style.transform = `translateY(${scrollY * 0.3}px)`;
+            }
+            if (heroImage) {
+                heroImage.style.transform = `translateY(${scrollY * 0.2}px)`;
+            }
+
+            // Parallax for waves 
+            if (parallaxThird) {
+                parallaxThird.style.transform = `translateY(${scrollY * 0.1}px)`;
+            }
+            if (parallaxBack) {
+                parallaxBack.style.transform = `translateY(${scrollY * 0.2}px)`;
+            }
+            if (parallaxFront) {
+                parallaxFront.style.transform = `translateY(${scrollY * 0.4}px)`;
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const h1 = document.getElementById('typing-h1');
+            const normalText = "Hi, I'm ";
+            const nameText = "James Galgana";
+            const fullText = normalText + nameText;
+            let index = 0;
+            let isErasing = false;
+            let typingName = false;
+            const typingSpeed = 80; 
+            const erasingSpeed = 80; 
+            const pauseTime = 1500; 
+
+            function typeWriter() {
+                if (!isErasing) {
+                    if (!typingName) {
+                        // Typing the normal text first
+                        h1.innerHTML = normalText.substring(0, index + 1) + '<span class="cursor">|</span>';
+                        index++;
+                        if (index >= normalText.length) {
+                            typingName = true;
+                            index = 0;
+                        }
+                    } else {
+                        // Typing the colored name
+                        h1.innerHTML = normalText + '<span class="highlight-name">' + nameText.substring(0, index + 1) + '</span><span class="cursor">|</span>';
+                        index++;
+                        if (index >= nameText.length) {
+                            isErasing = true;
+                            index = fullText.length;
+                            setTimeout(typeWriter, pauseTime);
+                            return;
+                        }
+                    }
+                } else {
+                    // Erasing phase
+                    index--;
+                    const currentText = fullText.substring(0, index + 1);
+                    const nameStart = normalText.length;
+                    const beforeName = currentText.substring(0, Math.min(nameStart, currentText.length));
+                    const namePart = currentText.length > nameStart ? currentText.substring(nameStart) : '';
+                    h1.innerHTML = beforeName + '<span class="highlight-name">' + namePart + '</span><span class="cursor">|</span>';
+                    if (index < 0) {
+                        isErasing = false;
+                        typingName = false;
+                        index = 0;
+                        setTimeout(typeWriter, pauseTime);
+                        return;
+                    }
+                }
+                setTimeout(typeWriter, isErasing ? erasingSpeed : typingSpeed);
+            }
+
+           
+            setTimeout(typeWriter, 1000);
+        });
+    </script>
 </body>
-</html>
