@@ -7,7 +7,7 @@ Built with clean, modern design and smooth scrolling animations for a profession
 
 **How to Run Locally**
 
-1. **Clone this repository**
+**1. Clone this repository**
    ```bash
    git clone https://github.com/yourusername/your-portfolio.git
    
@@ -16,6 +16,7 @@ cd your-portfolio
 
 **3. Open the index.html file in your browser**
 (You can double-click it or use a local server such as VS Code Live Server.)
+
 
 **Built With**
 
@@ -27,7 +28,9 @@ cd your-portfolio
 
 **Boxicons** – Icons for social links and navigation
 
+
 **Credits**
+
 **CSS, HTML, JAVASCRIPT LOGO** - https://www.freepnglogos.com/images/javascript-39422.html
 
 **PYTHON LOGO** - https://icons8.com/icons/set/python
